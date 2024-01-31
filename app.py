@@ -67,8 +67,8 @@ def api():
 
         image = request.files.get('file')
         predictions = make_api_prediction(image)
-        predicted_label = predictions["labels"][0] if predictions["labels"] else "N/A"
-        return jsonify({'prediction': predicted_label})
+        predicted_labels = predictions["labels"]
+        return jsonify({'predictions': predicted_labels})
     except Exception as e:
         return jsonify({'error': str(e)})
 
