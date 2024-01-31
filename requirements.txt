@@ -10,3 +10,4 @@ pyplot
 torchvision
 models
 detection
+streamlit
