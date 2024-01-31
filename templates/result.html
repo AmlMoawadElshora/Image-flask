@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Result</title>
+</head>
+<body>
+    <h2>Predicted Probabilities</h2>
+    <ul>
+        {% for key, value in prediction.items() %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+    <img src="{{ url_for('static', filename='result.png') }}" alt="Object Detection Result">
+</body>
+</html>

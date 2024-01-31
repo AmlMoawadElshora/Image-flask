@@ -1,0 +1,12 @@
+gunicorn
+flask
+torch
+Pillow
+werkzeug
+utils
+numpy
+matplotlib
+pyplot
+torchvision
+models
+detection
